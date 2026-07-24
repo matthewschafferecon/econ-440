@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Student study guide for the ECON 440 College Fed Challenge policy lab.">
+    <title>Fed Challenge Study Guide | ECON 440</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="course-mark" href="index.html">ECON 440 <span>Fall 2026</span></a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="fed-challenge.html" aria-current="page">Fed Challenge Lab</a></li>
+            <li><a href="data.html">Data Toolkit</a></li>
+            <li><a href="seminar.html">Seminar</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <header class="page-intro">
+        <p class="eyebrow">Student reference</p>
+        <h1>Fed Challenge study guide</h1>
+        <p class="lede">
+          Shared foundations for diagnosing the economy, building a forecast,
+          evaluating risks, and defending a monetary-policy recommendation.
+        </p>
+        <div class="inline-actions">
+          <a class="button primary" href="#policy-problem">Begin with the policy problem</a>
+          <a class="button" href="#mastery">Use the mastery check</a>
+        </div>
+      </header>
+
+      <div class="notice">
+        <strong>Research desks create specialization, not silos.</strong>
+        <p>
+          Every presenter must understand the full argument and be able to explain
+          every chart, forecast assumption, risk, and policy choice.
+        </p>
+      </div>
+
+      <section id="policy-problem" class="section" aria-labelledby="problem">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Analytical spine</p>
+            <h2 id="problem">Four questions for every issue</h2>
+          </div>
+          <p>A list of indicators is not an economic diagnosis.</p>
+        </div>
+        <div class="phase-rail">
+          <article class="phase">
+            <span class="number">01</span>
+            <span class="phase-date">State</span>
+            <strong>What do the most relevant data say now?</strong>
+          </article>
+          <article class="phase">
+            <span class="number">02</span>
+            <span class="phase-date">Outlook</span>
+            <strong>Where is the variable likely to move?</strong>
+          </article>
+          <article class="phase">
+            <span class="number">03</span>
+            <span class="phase-date">Mechanism</span>
+            <strong>Why should it move, and how would policy affect it?</strong>
+          </article>
+          <article class="phase">
+            <span class="number">04</span>
+            <span class="phase-date">Decision</span>
+            <strong>What does this imply for monetary policy?</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="fed">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Foundation 1</p>
+            <h2 id="fed">The Fed and policy implementation</h2>
+          </div>
+          <p>
+            Distinguish the FOMC decision, the operating framework, observed market
+            rates, and the broader stance of policy.
+          </p>
+        </div>
+        <dl class="definition-list">
+          <dt>Decision</dt>
+          <dd>The FOMC chooses the target range and communicates its policy stance.</dd>
+          <dt>Implementation</dt>
+          <dd>Administered rates and Desk operations keep overnight rates within the target range in an ample-reserves framework.</dd>
+          <dt>Transmission</dt>
+          <dd>Expected policy, yields, credit, asset prices, exchange rates, and balance sheets influence demand, employment, and inflation.</dd>
+          <dt>Communication</dt>
+          <dd>The statement, implementation note, SEP, minutes, and press conference serve different purposes.</dd>
+        </dl>
+        <ul class="source-list">
+          <li><a href="https://www.federalreserve.gov/monetarypolicy.htm">Fed monetary policy</a></li>
+          <li><a href="https://www.federalreserve.gov/monetarypolicy/policytools.htm">Policy tools</a></li>
+          <li><a href="https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation">Implementation</a></li>
+          <li><a href="https://www.federalreserve.gov/aboutthefed/the-fed-explained.htm">The Fed Explained</a></li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="data-reading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Foundation 2</p>
+            <h2 id="data-reading">Reading real-time data</h2>
+          </div>
+          <p>Record enough metadata that another analyst can reproduce the result.</p>
+        </div>
+        <ul class="check-list">
+          <li>Exact publisher, release, series name, and identifier</li>
+          <li>Units, frequency, seasonal adjustment, date range, and transformation</li>
+          <li>Release date, retrieval date, and revision status</li>
+          <li>A comparison that makes the observation economically meaningful</li>
+          <li>A clear separation among observed data, forecasts, assumptions, and judgments</li>
+        </ul>
+        <div class="notice calm">
+          <strong>Common error.</strong>
+          <p>
+            A percent change is not a percentage-point change. Do not annualize a
+            series already expressed at an annual rate, and check revisions before
+            declaring a turning point.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="conditions">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Foundation 3</p>
+            <h2 id="conditions">Diagnosing current conditions</h2>
+          </div>
+          <p>Use corroborating evidence and make disagreements across indicators explicit.</p>
+        </div>
+        <div class="card-grid two">
+          <article class="card">
+            <p class="kicker">Prices</p>
+            <h3>Inflation</h3>
+            <p>
+              Compare CPI and PCE, headline and core, recent momentum and 12-month
+              rates, breadth, wages, productivity, expectations, and supply effects.
+            </p>
+          </article>
+          <article class="card">
+            <p class="kicker">Employment</p>
+            <h3>Labor markets</h3>
+            <p>
+              Reconcile payrolls, unemployment, participation, flows, vacancies,
+              quits, hours, wages, revisions, and group outcomes.
+            </p>
+          </article>
+          <article class="card">
+            <p class="kicker">Demand and supply</p>
+            <h3>Economic activity</h3>
+            <p>
+              Separate levels from growth and compare GDP, GDI, final sales,
+              consumption, investment, housing, production, and potential supply.
+            </p>
+          </article>
+          <article class="card">
+            <p class="kicker">Transmission</p>
+            <h3>Credit and financial conditions</h3>
+            <p>
+              Distinguish price from quantity, supply from demand, risk-free rates
+              from premia, and financial tightening from financial stress.
+            </p>
+          </article>
+        </div>
+        <p><a class="text-link" href="data.html">Open the complete data toolkit →</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="forecast">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Foundation 4</p>
+            <h2 id="forecast">Forecasts, risks, and scenarios</h2>
+          </div>
+          <p>A policy forecast is a transparent conditional judgment, not a set of isolated point guesses.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <p class="kicker">Baseline</p>
+            <h3>Define assumptions</h3>
+            <p>Horizon, policy path, financial conditions, fiscal setting, external conditions, central paths, and ranges.</p>
+          </article>
+          <article class="card">
+            <p class="kicker">Consistency</p>
+            <h3>Reconcile variables</h3>
+            <p>Output and employment, costs and inflation, consumption and income, credit and the assumed policy path.</p>
+          </article>
+          <article class="card">
+            <p class="kicker">Benchmarks</p>
+            <h3>Explain differences</h3>
+            <p>Compare with the SEP, surveys, market paths, and nowcasts without treating any benchmark as an answer key.</p>
+          </article>
+          <article class="card">
+            <p class="kicker">Risk</p>
+            <h3>Specify signposts</h3>
+            <p>Trigger, causal chain, horizon, probability, impact, observable signposts, invalidation, and policy implication.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="recommendation">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Foundation 5</p>
+            <h2 id="recommendation">A complete policy recommendation</h2>
+          </div>
+          <p>The recommendation should follow from the diagnosis, forecast, and risk assessment.</p>
+        </div>
+        <ul class="check-list">
+          <li>State the target-range decision and any relevant balance-sheet or implementation choice.</li>
+          <li>Identify the diagnosis and forecast that support the decision.</li>
+          <li>Compare the recommendation with serious alternatives.</li>
+          <li>Explain how uncertainty and asymmetric risks affect the choice.</li>
+          <li>State what future evidence would cause the team to change course.</li>
+          <li>Address material distributional and financial-stability implications.</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="answer">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Oral defense</p>
+            <h2 id="answer">Answer, reason, evidence, condition</h2>
+          </div>
+          <p>This is a reasoning structure, not a memorized script.</p>
+        </div>
+        <div class="phase-rail">
+          <article class="phase">
+            <span class="number">01</span>
+            <span class="phase-date">Answer</span>
+            <strong>Give the conclusion first.</strong>
+          </article>
+          <article class="phase">
+            <span class="number">02</span>
+            <span class="phase-date">Reason</span>
+            <strong>State the central mechanism.</strong>
+          </article>
+          <article class="phase">
+            <span class="number">03</span>
+            <span class="phase-date">Evidence</span>
+            <strong>Use one or two decisive facts.</strong>
+          </article>
+          <article class="phase">
+            <span class="number">04</span>
+            <span class="phase-date">Condition</span>
+            <strong>Say what would change the view.</strong>
+          </article>
+        </div>
+        <p><a class="text-link" href="fed-challenge.html#qa">Review the four official question types →</a></p>
+      </section>
+
+      <section id="mastery" class="section" aria-labelledby="mastery-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Self-assessment</p>
+            <h2 id="mastery-heading">Presenter mastery check</h2>
+          </div>
+          <p>Every presenter should be able to do these without slides.</p>
+        </div>
+        <ul class="check-list">
+          <li>Explain the dual mandate, FOMC role, and ample-reserves implementation.</li>
+          <li>State the team's inflation, labor, activity, and credit diagnoses.</li>
+          <li>Reconstruct the forecast, assumptions, benchmarks, and uncertainty.</li>
+          <li>Explain the top risks, causal chains, signposts, and invalidation conditions.</li>
+          <li>Defend the recommendation against at least two alternatives.</li>
+          <li>Interpret every chart and identify its source and transformation.</li>
+          <li>Respond to an important counterfactual data surprise.</li>
+          <li>Explain material effects across groups and sectors.</li>
+          <li>Identify the evidence that would change the team's view.</li>
+        </ul>
+      </section>
+
+      <p><a class="text-link" href="fed-challenge.html">← Return to the policy lab</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p>ECON 440 · Eastern Michigan University · Fall 2026</p>
+        <div class="footer-links">
+          <a href="fed-challenge.html">Policy lab</a>
+          <a href="data.html">Data toolkit</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

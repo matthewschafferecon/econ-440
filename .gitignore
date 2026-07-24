@@ -1,0 +1,16 @@
+# Private and retained source material
+/2024 Submission/
+/2025 Submission/
+/ECON 440 Course Proposal (Fall 2026).docx
+/Fed Challenge Study Plan.pdf
+/Federal Reserve Board - Rules and Tips.pdf
+/The College Fed Challenge A roadmap for instructors.pdf
+/The Fed - College Fed Challenge 2026 Overview.pdf
+/The Fed - Frequently Asked Questions.pdf
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
