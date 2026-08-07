@@ -11,7 +11,7 @@ The deployable static site is in [`docs/`](docs/). It includes:
 - the College Fed Challenge rubric, research-desk system, and workflow;
 - a student monetary-policy study guide and Q&A drill bank;
 - an authoritative macroeconomic data and policy-source guide;
-- the provisional advanced monetary-economics seminar sequence; and
+- the Fall 2026 advanced monetary-economics seminar sequence and assessments; and
 - participation, privacy, student-authorship, and AI policies.
 
 The site uses relative links and has no build dependencies. A GitHub Actions
