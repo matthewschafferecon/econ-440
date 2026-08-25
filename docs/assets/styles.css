@@ -204,12 +204,33 @@ p {
   padding-bottom: 4rem;
 }
 
+.hero h1 {
+  margin-bottom: 0;
+}
+
+.hero-meeting {
+  margin: 1.7rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+}
+
+.hero-meeting span {
+  margin-inline: 0.35rem;
+  color: var(--signal);
+}
+
 .hero-actions,
 .inline-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 1.8rem;
+}
+
+.hero-actions {
+  margin-top: 1.35rem;
 }
 
 .button {
@@ -285,6 +306,19 @@ p {
   border-top: 1px solid var(--rule);
 }
 
+.course-overview {
+  padding-block: 3.25rem;
+}
+
+.course-description {
+  max-width: 64rem;
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: clamp(1.22rem, 2vw, 1.5rem);
+  line-height: 1.65;
+}
+
 .section-heading {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
@@ -299,6 +333,10 @@ p {
 .section-heading p {
   max-width: 42rem;
   color: var(--ink-soft);
+}
+
+.section-heading.single {
+  grid-template-columns: 1fr;
 }
 
 .phase-rail {
@@ -338,6 +376,46 @@ p {
   font-family: var(--serif);
   font-size: 1.18rem;
   font-weight: 500;
+}
+
+.assignment-rail {
+  margin-bottom: 2.5rem;
+}
+
+.section-link {
+  margin: 1.5rem 0 0;
+}
+
+.topic-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  border-top: 3px solid var(--ink);
+  list-style: none;
+}
+
+.topic-list li {
+  position: relative;
+  padding: 1.35rem 1.25rem 1.35rem 2.5rem;
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: rgba(255, 253, 248, 0.48);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.topic-list li:nth-child(2n) {
+  border-right: 0;
+}
+
+.topic-list li::before {
+  position: absolute;
+  top: 1.55rem;
+  left: 1.15rem;
+  color: var(--signal);
+  content: "•";
 }
 
 .card-grid {
@@ -525,6 +603,116 @@ p {
   font-size: 1.05rem;
 }
 
+.rubric-notes {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-left: 5px solid var(--gold);
+  background: var(--surface);
+}
+
+.rubric-notes h3 {
+  margin-bottom: 0.8rem;
+}
+
+.rubric-notes ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem 2rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.winner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.winner-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--ink);
+  background: rgba(255, 253, 248, 0.62);
+}
+
+.winner-heading,
+.winner-notes,
+.winner-links {
+  padding-inline: 1.35rem;
+}
+
+.winner-heading {
+  padding-block: 1.35rem 1rem;
+}
+
+.winner-heading .kicker {
+  margin-bottom: 0.55rem;
+  color: var(--signal);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.winner-heading h3 {
+  margin: 0;
+}
+
+.video-frame {
+  aspect-ratio: 16 / 9;
+  background: var(--ink);
+}
+
+.video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.winner-notes {
+  flex: 1;
+  padding-block: 1.25rem;
+}
+
+.winner-notes h4 {
+  margin-bottom: 0.65rem;
+  color: var(--signal);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.winner-notes ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.winner-notes li + li {
+  margin-top: 0.7rem;
+}
+
+.winner-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin: 0;
+  padding-block: 1rem 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.topics-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: 0;
+  align-items: stretch;
+  border-top: 3px solid var(--ink);
+}
+
 .desk-list {
   counter-reset: desks;
 }
@@ -550,6 +738,25 @@ p {
 }
 
 .desk p {
+  color: var(--ink-soft);
+}
+
+.policy-topic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.6rem;
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  border-left: 1px solid var(--rule);
+  background: var(--surface);
+}
+
+.policy-topic h3 {
+  margin-bottom: 0.8rem;
+}
+
+.policy-topic p {
   color: var(--ink-soft);
 }
 
@@ -750,8 +957,14 @@ p {
   }
 
   .card-grid,
-  .rubric-grid {
+  .rubric-grid,
+  .winner-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .winner-card:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 0.625rem);
   }
 
   .source-list {
@@ -780,13 +993,29 @@ p {
 
   .phase-rail,
   .card-grid,
-  .card-grid.two,
-  .rubric-grid,
-  .session-grid,
+    .card-grid.two,
+    .rubric-grid,
+    .rubric-notes ul,
+    .winner-grid,
+    .session-grid,
   .source-list,
   .site-footer-inner,
   .definition-list {
     grid-template-columns: 1fr;
+  }
+
+  .winner-card:last-child {
+    grid-column: auto;
+    width: auto;
+  }
+
+  .topic-list {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-list li,
+  .topic-list li:nth-child(2n) {
+    border-right: 0;
   }
 
   .grade-grid {
