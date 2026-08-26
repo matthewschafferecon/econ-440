@@ -1,14 +1,14 @@
 :root {
-  --ink: #10263f;
-  --ink-soft: #415469;
-  --paper: #f5f1e8;
-  --paper-deep: #e9e2d4;
-  --surface: #fffdf8;
-  --signal: #a72d35;
-  --gold: #a87b32;
-  --rule: #c9c0b0;
-  --success: #315f50;
-  --shadow: 0 16px 42px rgba(16, 38, 63, 0.09);
+  --ink: #17352c;
+  --ink-soft: #4b6259;
+  --paper: #f4f7f2;
+  --paper-deep: #e1ece4;
+  --surface: #ffffff;
+  --signal: #046a38;
+  --highlight: #97d700;
+  --rule: #b7c9bd;
+  --success: #009ca6;
+  --shadow: 0 16px 42px rgba(4, 106, 56, 0.1);
   --sans: "Segoe UI", Arial, Helvetica, sans-serif;
   --serif: Georgia, "Times New Roman", serif;
   --measure: 72rem;
@@ -27,7 +27,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(rgba(16, 38, 63, 0.025) 1px, transparent 1px),
+    linear-gradient(rgba(4, 106, 56, 0.025) 1px, transparent 1px),
     var(--paper);
   background-size: 100% 2rem;
   font-family: var(--sans);
@@ -40,12 +40,12 @@ a {
 }
 
 a:hover {
-  color: #761f27;
+  color: #024a27;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid var(--signal);
   outline-offset: 3px;
 }
 
@@ -69,7 +69,7 @@ img {
 
 .site-header {
   border-bottom: 1px solid var(--rule);
-  background: rgba(245, 241, 232, 0.96);
+  background: rgba(244, 247, 242, 0.96);
 }
 
 .header-inner,
@@ -261,8 +261,8 @@ p {
 }
 
 .button.primary:hover {
-  border-color: #761f27;
-  background: #761f27;
+  border-color: #024a27;
+  background: #024a27;
 }
 
 .deadline-card {
@@ -401,7 +401,7 @@ p {
   padding: 1.35rem 1.25rem 1.35rem 2.5rem;
   border-right: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
-  background: rgba(255, 253, 248, 0.48);
+  background: rgba(255, 255, 255, 0.48);
   font-family: var(--serif);
   font-size: 1.2rem;
 }
@@ -431,7 +431,7 @@ p {
 .card {
   padding: 1.65rem;
   border: 1px solid var(--rule);
-  background: rgba(255, 253, 248, 0.62);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .card .kicker {
@@ -592,7 +592,7 @@ p {
 
 .rubric-item {
   padding: 1.25rem 1rem;
-  border-top: 4px solid var(--gold);
+  border-top: 4px solid var(--highlight);
   background: var(--surface);
 }
 
@@ -606,7 +606,7 @@ p {
 .rubric-notes {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
-  border-left: 5px solid var(--gold);
+  border-left: 5px solid var(--highlight);
   background: var(--surface);
 }
 
@@ -634,7 +634,7 @@ p {
   flex-direction: column;
   border: 1px solid var(--rule);
   border-top: 4px solid var(--ink);
-  background: rgba(255, 253, 248, 0.62);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .winner-heading,
@@ -774,7 +774,7 @@ p {
 
 .link-list li {
   padding-block: 0.75rem;
-  border-bottom: 1px solid rgba(201, 192, 176, 0.65);
+  border-bottom: 1px solid rgba(183, 201, 189, 0.65);
 }
 
 .link-list a {
@@ -884,7 +884,7 @@ p {
   padding: 0.9rem 1rem;
   border-right: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
-  background: rgba(255, 253, 248, 0.62);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .grade-grid div:nth-child(5n) {
